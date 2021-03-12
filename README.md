@@ -2,19 +2,19 @@
 Job Tracker | Pathrise
 
 **a. Description and working of the project:**
-  -> First of all, I have used python (IPythonNotebook), to read the .csv files. This python notebook takes care of resolving the job source from the url and                 dumping the data the database 'jobOpportunites.db'. There are two tables, 'JobBoards' that stores data from the json file and 'JobListings' for all the job listing and its source.For minimum overload, I have used sqlite3 as the database. In the file "Pathrise_Data_Preprocessing.ipynb", I have mentioned detailed comments on each step.
+  * First of all, I have used python (IPythonNotebook), to read the .csv files. This python notebook takes care of resolving the job source from the url and                 dumping the data the database 'jobOpportunites.db'. There are two tables, 'JobBoards' that stores data from the json file and 'JobListings' for all the job listing and its source.For minimum overload, I have used sqlite3 as the database. In the file "Pathrise_Data_Preprocessing.ipynb", I have mentioned detailed comments on each step.
   
-  -> For the frontend part, I have used React.js to display the job sources and the job postings by the respective job source. I have used 'axios' to handle the backend api calls for data transfer.
+  * For the frontend part, I have used React.js to display the job sources and the job postings by the respective job source. I have used 'axios' to handle the backend api calls for data transfer.
   
-  -> For the backend part, I have used Node.js and Express.js to handle endpoints and GET/POST requests to and from both the tables.I have made use of 'url' node library to handle the POST request, parse the request query string and identify which job source was clicked on the UI.
+  * For the backend part, I have used Node.js and Express.js to handle endpoints and GET/POST requests to and from both the tables.I have made use of 'url' node library to handle the POST request, parse the request query string and identify which job source was clicked on the UI. The sqlite query filters out the results if the Job Title is NULL or Company Name is Unknown or NULL>
 
 b. **To run the app:**
-  -> Open Terminal/cmd.
-  -> Enter command following commands:
+  * Open Terminal/cmd.
+  * Enter command following commands:
       * git clone https://github.com/RKBOSAMIA/Job-Tracker.git
       * cd backend
       * npm start 
-   This will start the server on http://localhost:8000. This URL can be direct entered in a browser.
+  * This will start the server on http://localhost:8000. This URL can be direct entered in a browser.
    
 c. **Below is the list of dependencies for the project:**
   * Node server/backend dependencies.
@@ -38,13 +38,15 @@ c. **Below is the list of dependencies for the project:**
     "react-scripts": "4.0.3",
     "web-vitals": "^1.1.0"
   }
-  I have installed every thirs party library using the 'npm' command.
+  * I have installed every thirs party library using the 'npm' command.
   
  d.**Publicly accessible URL**
-  I have deployed the application on Heroku. The link to the app -> [https://job-trackerr.herokuapp.com/](url)
+  I have deployed the application on Heroku. The link to the app
+  * [https://job-trackerr.herokuapp.com/](url)
  
- e. 
+ e. **Resolved job opportunities .csv file**
+  * [https://github.com/RKBOSAMIA/Job-Tracker/blob/master/Files/resolvedJobOpportunities.csv](url)
  
  f. **Visualisation**
-  I have used python dictionary to count the total number of jobs each board and have dumped it to a json file. Here is the link to the file:
+  * I have used python dictionary to count the total number of jobs each board and have dumped it to a json file. Here is the link to the file:
   [https://github.com/RKBOSAMIA/Job-Tracker/blob/master/Files/jobCounter.json](url)
