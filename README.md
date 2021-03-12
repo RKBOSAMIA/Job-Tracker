@@ -1,5 +1,4 @@
 # Job-Tracker
-Job Tracker | Pathrise
 
 **a. Description and working of the project:**
   * First of all, I have used python (IPythonNotebook), to read the .csv files. This python notebook takes care of resolving the job source from the url and                 dumping the data the database 'jobOpportunites.db'. There are two tables, 'JobBoards' that stores data from the json file and 'JobListings' for all the job listing and its source.For minimum overload, I have used sqlite3 as the database. In the file "Pathrise_Data_Preprocessing.ipynb", I have mentioned detailed comments on each step.
