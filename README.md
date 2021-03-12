@@ -5,13 +5,14 @@
   
   * For the frontend part, I have used React.js to display the job sources and the job postings by the respective job source. I have used 'axios' to handle the backend api calls for data transfer.
   
-  * For the backend part, I have used Node.js and Express.js to handle endpoints and GET/POST requests to and from both the tables.I have made use of 'url' node library to handle the POST request, parse the request query string and identify which job source was clicked on the UI. The sqlite query filters out the results if the Job Title is NULL or Company Name is Unknown or NULL>
+  * For the backend part, I have used Node.js and Express.js to handle endpoints and GET/POST requests to and from both the tables.I have made use of 'url' node library to handle the POST request, parse the request query string and identify which job source was clicked on the UI. The sqlite query filters out the results if the Job Title is NULL or Company Name is Unknown or NULL.
 
 b. **To run the app:**
   * Open Terminal/cmd.
   * Enter command following commands:
       * git clone https://github.com/RKBOSAMIA/Job-Tracker.git
-      * cd backend
+      * cd Job-Tracker/backend
+      * npm install express (this step is required if express.js is not installed)
       * npm start 
   * This will start the server on http://localhost:8000. This URL can be direct entered in a browser.
    
